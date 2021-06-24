@@ -15,7 +15,7 @@ You can specify a search parameter, e.g., `fbi git` will start your search with 
 
 Multiple options can be selected using `shift-tab` by default.
 
-Previews (toggled using `?` by default) will show `brew info` for the selected formula or package.
+Previews will show `brew info` for the selected formula or package.
 
 You can visit the homepage of the formula or cask using `ctrl-space`.
 
