@@ -1,6 +1,6 @@
 function __setup_fzf_brew() {
     fbi() {
-        local inst=$(brew formulae | fzf --query="$1" -m --preview 'brew info {}' --bind="ctrl-space:execute-silent(brew home {})")
+        local inst=$(brew formulae | fzf --query="$1" -m --preview 'HOMEBREW_COLOR=true brew info {}' --bind="ctrl-space:execute-silent(brew home {})")
 
         if [[ $inst ]]; then
             for prog in $(echo $inst); do; brew install $prog; done;
@@ -8,7 +8,7 @@ function __setup_fzf_brew() {
     }
 
     fbui() {
-        local uninst=$(brew leaves | fzf --query="$1" -m --preview 'brew info {}' --bind="ctrl-space:execute-silent(brew home {})")
+        local uninst=$(brew leaves | fzf --query="$1" -m --preview 'HOMEBREW_COLOR=true brew info {}' --bind="ctrl-space:execute-silent(brew home {})")
 
         if [[ $uninst ]]; then
             for prog in $(echo $uninst);
@@ -17,7 +17,7 @@ function __setup_fzf_brew() {
     }
 
     fci() {
-        local inst=$(brew casks | fzf --query="$1" -m --preview 'brew info --cask {}' --bind="ctrl-space:execute-silent(brew home --cask {})")
+        local inst=$(brew casks | fzf --query="$1" -m --preview 'HOMEBREW_COLOR=true brew info --cask {}' --bind="ctrl-space:execute-silent(brew home --cask {})")
 
         if [[ $inst ]]; then
             for prog in $(echo $inst); do; brew install --cask $prog; done;
@@ -25,7 +25,7 @@ function __setup_fzf_brew() {
     }
 
     fcui() {
-        local inst=$(brew list --cask | fzf --query="$1" -m --preview 'brew info --cask {}' --bind="ctrl-space:execute-silent(brew home --cask {})")
+        local inst=$(brew list --cask | fzf --query="$1" -m --preview 'HOMEBREW_COLOR=true brew info --cask {}' --bind="ctrl-space:execute-silent(brew home --cask {})")
 
         if [[ $inst ]]; then
             for prog in $(echo $inst); do; brew uninstall --cask $prog; done;
