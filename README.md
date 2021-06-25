@@ -6,12 +6,20 @@ Use the excellent [fzf](https://github.com/junegunn/fzf) to interactively instal
 
 ## Usage
 
+You can either use the convenient aliases or triggered completions.
+
+The following aliases are defined:
+
 * `fbi`: Fuzzy brew install
 * `fbui`: Fuzzy brew uninstall
 * `fci`: Fuzzy cask install
 * `fcui`: Fuzzy cask uninstall
 
 You can specify a search parameter, e.g., `fbi git` will start your search with `git`.
+
+Alternatively, you can use use the fzf trigger with `tab`. The default trigger is `**`. Hence the following command will work `brew install git**<tab>`. Casks can be installed with `brew install --cask **`
+
+Obviously, I prefer the much shorter aliases.
 
 ## Additional functionality
 
