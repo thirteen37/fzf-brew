@@ -2,6 +2,8 @@
 
 Use the excellent [fzf](https://github.com/junegunn/fzf) to interactively install and uninstall [Homebrew](https://brew.sh/) formulae and casks.
 
+[![asciicast](https://asciinema.org/a/ev7JRoiWoDphRQj7aCQo51uir.svg)](https://asciinema.org/a/ev7JRoiWoDphRQj7aCQo51uir)
+
 ## Usage
 
 * `fbi`: Fuzzy brew install
