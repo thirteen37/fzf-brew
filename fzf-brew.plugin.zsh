@@ -69,8 +69,8 @@ function fuzzy_cask_uninstall() {
 function __setup_fzf_brew() {
     alias fbi=fuzzy_brew_install
     alias fbui=fuzzy_brew_uninstall
-    alias fci=fuzzy_brew_install
-    alias fcui=fuzzy_brew_uninstall
+    alias fci=fuzzy_cask_install
+    alias fcui=fuzzy_cask_uninstall
 }
 
 __setup_fzf_brew
