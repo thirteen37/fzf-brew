@@ -46,7 +46,7 @@ You can visit the homepage of the formula or cask using `ctrl-space`.
 
 #### `zgen` or `zgenom`
 
-Add `zgenom load thirteen37/fzf-brew` or `zgenom load thirteen37/fzf-brew` to your `.zshrc`
+Add `zgen load thirteen37/fzf-brew` or `zgenom load thirteen37/fzf-brew` to your `.zshrc`
 
 #### `antigen`
 
