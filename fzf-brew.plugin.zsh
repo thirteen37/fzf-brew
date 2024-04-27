@@ -2,12 +2,12 @@
 
 if ! (( $+commands[brew] )); then
     echo 'brew command not found: please install via https://brew.sh/'
-    exit
+    return
 fi
 
 if ! (( $+commands[fzf] )); then
     echo 'fzf command not found: please install via "brew install fzf"'
-    exit
+    return
 fi
 
 FB_FORMULA_PREVIEW='HOMEBREW_COLOR=true brew info {}'
